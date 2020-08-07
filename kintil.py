@@ -54,9 +54,9 @@ def main ():
                  sendSms = requests.post('https://cmsapi.mapclub.com/api/signup-otp', data=dat, headers=ua)
                  sendSms.json()
                  if 'error' in sendSms.text:
-                         print('Spam '+ no + ' [ gagal ]')
+                         print('Spam '+ str(no) + ' [ gagal ]')
                  else:
-                         print('Spam '+ no + ' [ berhasil ]')
+                         print('Spam '+ str(no) + ' [ berhasil ]')
 
 main()
 lagi()
